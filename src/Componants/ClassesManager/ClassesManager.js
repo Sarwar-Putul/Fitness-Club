@@ -7,7 +7,7 @@ const ClassesManager = () => {
     const [manageClasses, setManageClasses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/classes')
+        fetch('https://pacific-depths-29780.herokuapp.com/classes')
         .then(res => res.json())
         .then(data => setManageClasses(data))
     }, []);

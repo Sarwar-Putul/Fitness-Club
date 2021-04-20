@@ -7,7 +7,7 @@ const Trainers = () => {
     const [trainers, setTrainers] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:5000/trainers')
+        fetch('https://pacific-depths-29780.herokuapp.com/trainers')
         .then(res => res.json())
         .then(data => setTrainers(data))
     }, []);

@@ -6,7 +6,7 @@ import { Table } from 'react-bootstrap';
 const ManageService = ({service}) => {
 
     const deleteService = (id) =>{
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://pacific-depths-29780.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -20,7 +20,7 @@ const ManageService = ({service}) => {
     const changeStatus = event =>{
         const status = event
         console.log(status)
-        fetch(`http://localhost:5000/update/${service._id}`, {
+        fetch(`https://pacific-depths-29780.herokuapp.com/update/${service._id}`, {
             method: 'PATCH',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({status})

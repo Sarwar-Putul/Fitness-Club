@@ -13,7 +13,7 @@ const Book = () => {
     const [lesson, setLesson] = useState({name:"", price:""});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/class/${id}`)
+        fetch(`https://pacific-depths-29780.herokuapp.com/class/${id}`)
         .then(res => res.json())
         .then(data => setLesson(data))
         
@@ -24,7 +24,7 @@ const [transactionDetails, setTransactionDetails]=useState(null)
     const handleBooking = () => {
         const {name,price,duration, status, paymentMethod}=lesson;
            const bookingPlacement = {...loggedInUser, name, price, duration, paymentMethod,transactionDetails, status, date: new Date()};
-           fetch('http://localhost:5000/booking', {
+           fetch('https://pacific-depths-29780.herokuapp.com/booking', {
                method: 'POST',
                headers: {'content-type': 'application/json'},
                body: JSON.stringify(bookingPlacement)

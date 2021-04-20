@@ -8,7 +8,7 @@ const Trainer = ({coach}) => {
                 {
                     coach.image ? <img style={{height:'100px', width:'100px'}} src={`data:image/png;base64,${coach.image.img}`} />
                     :
-                    <img style={{height:'100px', width:'100px'}} src={`http://localhost:5000/${coach.img}`} alt=""/>
+                    <img style={{height:'100px', width:'100px'}} src={`https://pacific-depths-29780.herokuapp.com/${coach.img}`} alt=""/>
                 }
             </div>
             <div className="">

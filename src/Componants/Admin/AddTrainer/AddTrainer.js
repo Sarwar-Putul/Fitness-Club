@@ -28,7 +28,7 @@ const AddTrainer = () => {
             formData.append('email', info.email);
             
 
-            fetch('http://localhost:5000/addTrainer', {
+            fetch('https://pacific-depths-29780.herokuapp.com/addTrainer', {
                 method: 'POST',
                 body: formData
             })

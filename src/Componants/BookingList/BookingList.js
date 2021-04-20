@@ -9,7 +9,7 @@ const BookingList = () => {
     const [user, setUser] = useContext(UserContext);
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/book/${user.email}`)
+        fetch(`https://pacific-depths-29780.herokuapp.com/book/${user.email}`)
         .then(res => res.json())
         .then(data => setBookings(data))
     }, []);

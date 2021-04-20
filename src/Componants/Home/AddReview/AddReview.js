@@ -12,13 +12,14 @@ const AddReview = () => {
         setFeedback(newFeedback);
     }
 
-    const handleSubmit = () =>{
+    const handleSubmit = event =>{
+        event.preventDefault()
         const formData = new FormData()
             formData.append('name', feedback.name);
             formData.append('email', feedback.email);
             formData.append('message', feedback.message);
 
-            fetch('http://localhost:5000/addReview', {
+            fetch('https://pacific-depths-29780.herokuapp.com/addReview', {
                 method: 'POST',
                 body: formData
             })

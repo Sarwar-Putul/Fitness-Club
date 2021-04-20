@@ -10,7 +10,7 @@ const ClassCard = ({info}) => {
                 {
                     info.image ? <img src={`data:image/png;base64,${info.image.img}`} />
                     :
-                    <img src={`http://localhost:5000/${info.img}`} alt=""/>
+                    <img src={`https://pacific-depths-29780.herokuapp.com/${info.img}`} alt=""/>
                 }
                 
             </div>

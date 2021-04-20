@@ -30,7 +30,7 @@ const AddClass = () => {
             formData.append('duration', info.duration);
             formData.append('status', info.status);
 
-            fetch('http://localhost:5000/addClass', {
+            fetch('https://pacific-depths-29780.herokuapp.com/addClass', {
                 method: 'POST',
                 body: formData
             })
