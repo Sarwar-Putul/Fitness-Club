@@ -1,0 +1,35 @@
+.review-card{
+    border: 1px solid #4e5a65;
+    color: #b0b5b9;
+    height: 200px;
+    content: "";
+    display: block;
+    padding: 0 5px;
+    background: #3b4854;
+}
+
+.review-card h5{
+    color: #de5842;
+    margin: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.review-card h6{
+    color: #c9d607;
+    font-size: 10px;
+    text-transform:lowercase;
+    line-height: 30px;
+    font-weight: 100;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.review-card p{
+    font-size: 15px;
+    padding: 10px 0px 0px;
+    border-top: 1px solid #2c333d;
+    font-weight: 500;
+    line-height: 24px;
+}

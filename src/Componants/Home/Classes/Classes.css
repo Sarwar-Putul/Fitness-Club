@@ -1,0 +1,11 @@
+.class-container {
+    background-color: #15232F;
+    background-repeat: no-repeat;
+    background-image: url('../../../image/classesBg.png');
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    visibility: inherit;
+    z-index: -20;
+}
