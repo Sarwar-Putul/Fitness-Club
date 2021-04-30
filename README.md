@@ -20,10 +20,10 @@
 # Can Add Class, Trainer and give review form
 # Use a stripe payment section 
 
-1. Responsive for mobile and desktop. 
-2. Private Route Implemented. 
-3. Dashboard is conditionally separated for admin panel and users.
-4. Used Firebase for Google authentication.
+# Responsive for mobile and desktop. 
+# Private Route Implemented. 
+# Dashboard is conditionally separated for admin panel and users.
+# Used Firebase for Google authentication.
 
 
  Created by : Sarwar Putul 
